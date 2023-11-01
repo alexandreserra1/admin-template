@@ -3,10 +3,12 @@ import AuthInput from "../components/auth/authinput";
 import Image from 'next/image';
 import { IconeAtencao } from "../components/icons";
 import useAuth from "../data/context/hook/useauth";
+import avatarPadrao from '../public/images/avatar-padrao.jpg'; // Importe a imagem de avatar padrão
+
 
 export default function Autenticacao() {
 
-  const {usuario, loginGoogle} = useAuth()
+  const {cadastrar, login, loginGoogle} = useAuth()
 
   const [erro, setErro] = useState<string | null>(null); // Defina o tipo de estado como string | null
   const [modo, setModo] = useState<'login' | 'cadastro'>('login');
@@ -18,13 +20,19 @@ export default function Autenticacao() {
     setTimeout(() => setErro(null), tempoEmSegundos * 1000);
   }
 
-  function submeter() {
-    if (modo === 'login') {
-      console.log('login');
-      exibirErro('Ocorreu um erro no login');
-    } else {
-      console.log('cadastrar');
-      exibirErro('Ocorreu um erro no cadastro');
+  async function submeter() {
+    try {
+      if (modo === 'login') {
+        await login(email, senha);
+      } else {
+        await cadastrar(email, senha);
+      }
+    } catch (e) {
+      if (e instanceof Error) {
+        exibirErro(e.message || 'Erro desconhecido!');
+      } else {
+        exibirErro('Erro desconhecido!');
+      }
     }
   }
 

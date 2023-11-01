@@ -1,40 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Admin-Template
 
-## Getting Started
+Bem-vindo ao Admin-Template, um projeto de painel de administração construído com tecnologias de ponta. Esta plataforma oferece uma solução escalável e personalizável para criar painéis de administração eficientes.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
+O Admin-Template é desenvolvido com as seguintes tecnologias:
+
+- **Front-End:**
+  - [React](https://reactjs.org/): Biblioteca JavaScript para interfaces de usuário.
+  - [Next.js](https://nextjs.org/): Estrutura React otimizada para aplicações da web.
+  - [TypeScript](https://www.typescriptlang.org/): Linguagem de programação com tipos estáticos para desenvolvimento seguro.
+  - [Tailwind CSS](https://tailwindcss.com/): Framework CSS altamente personalizável.
+
+- **Back-End:**
+  - [Node.js](https://nodejs.org/): Ambiente de execução JavaScript no lado do servidor.
+  - [Firebase](https://firebase.google.com/): Plataforma de desenvolvimento de aplicativos móveis e web.
+
+## Recursos Destacados
+
+- **Design Responsivo:** A interface é totalmente responsiva, adequando-se a todos os dispositivos.
+- **Personalização:** Código aberto e bem organizado, permitindo personalização completa.
+- **Recursos Poderosos:** Inclui componentes pré-criados e funcionalidades essenciais, como autenticação e autorização.
+- **Conexão com API:** Conecta-se a uma API para buscar e exibir dados em tempo real.
+
+## Como Começar
+
+Para começar a usar o Admin-Template:
+
+1. **Clone o repositório:**
+
+   ```bash
+   git clone https://github.com/seu-nome/admin-template.git
+   cd admin-template
+
+2. **Instale as dependências:**
+npm install
+# ou
+yarn install
+
+3. **Inicie o servidor de desenvolvimento:**
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Acesse o projeto em http://localhost:3000 e comece a personalizar o painel de administração.

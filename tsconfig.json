@@ -9,6 +9,7 @@
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
+    "strictNullChecks": false, // Adicione esta linha
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -22,8 +23,9 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "src/firebase/config.ts"  ],
+    "**/*.tsx",
+    "src/firebase/config.ts"
+  ],
   "exclude": [
     "node_modules"
   ]
